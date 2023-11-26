@@ -1,8 +1,45 @@
-def f(x, y): #133
-    if x or y == 7:
+def f(x, y, n):
+    n = 0
+    if x > y:
         return 0
     if x == y:
         return 1
-    if x > y:
-        return f(x - 1, y) + f(x - 3, y) + f(x // 2, y)
-print(f(19, 10) * f(10, 3))
+    if n == 3:
+        print(f(2, 200, 1))
+    else:
+        return f(x + 1, y, n ) + f(x * 3, y, n + 1) + f(x * 5, y, n + 1)
+    
+print(f(2, 200, 3))
+
+
+
+
+
+
+#def f(x, y, Flag):
+  #  if x > y:
+   #     return 0
+  #  if x == y:
+  #      return 1
+  #  elif Flag:
+  #      return f(x + 1, y, True) + f(x + 2, y, True) + f(x * 2, y, False)
+  #  else:
+  #      return f(x + 1, y, True) + f(x + 2, y, True)
+#print(f(1, 9, True))
+
+
+
+
+
+
+
+#def f(x, y, n):
+ #   if x > y or n < 0:
+   #     return 0
+   # if x == y:
+   #     return 1
+   # return f(x + 1, y, n - 1) + f(x * 2, y, n - 1)
+#for i in range(2, 100):
+  #  if f(1, i, 5) == 0:
+  #      print(i)
+ #       break
