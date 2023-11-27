@@ -4,12 +4,9 @@ def f(x, y, n):
         return 0
     if x == y:
         return 1
-    if n == 3:
-        print(f(2, 200, 1))
-    else:
-        return f(x + 1, y, n ) + f(x * 3, y, n + 1) + f(x * 5, y, n + 1)
-    
-print(f(2, 200, 3))
+    if x < y:
+        return f(x + 2, y, n )  + f(x * 5, y, n) + f(x * 3, y, n + 1)
+print(f(2, 200, 4))
 
 
 
