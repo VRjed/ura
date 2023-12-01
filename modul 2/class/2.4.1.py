@@ -1,4 +1,6 @@
-v = input()
-b = input()
-c = input()
-print((v, b) * str(c), sep="\n")
+v = str(input())
+b = str(input())
+c = int(input())
+for i in range(c):
+    print(v)
+    print(b)
