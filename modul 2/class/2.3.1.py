@@ -1,3 +1,4 @@
 a = input()
-b = a.split(' ')
-print(b)
+b = len(a)
+for i in range(b):
+    print(a[i])

@@ -1,16 +1,8 @@
 b = int(input())
-#g = b // 10 % 10
-#h = b // 100 %10
-#j = b // 1000 % 10
-#k = b // 10000 % 10
-#l = b // 100000 % 10
 q = b % 10
-a = [0,5,6,7,8,9]   # битов
-c = [1]   # бит
-v = [2, 3 , 4, ]   # бита
-if q  in a:
-    print("битов")
-if q  in c:
-    print("бит")
-if q  in v:
-    print("бита")
+if q ==1 and b %100 != 11:
+	print("бит")
+elif q >=2 and q <= 4 and(b%100 < 10 or b %100 >=20):
+	print("бита")
+else:
+	print("битов")
