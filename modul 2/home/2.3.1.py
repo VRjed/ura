@@ -1,5 +1,5 @@
 a = input()
 b = 0
-for i in range(len(a)):
+for i in a:
     b += 1
 print(b)
