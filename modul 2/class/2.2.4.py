@@ -1,8 +1,8 @@
-a = int(input())
-b = int(input())
-c = int(input())
-v = int(input())
-if a // b == c and a % b == v:
+num1 = int(input())
+num2 = int(input())
+num3 = int(input())
+num4 = int(input())
+if num1 % num2 == num4 and num1 // num2 == num3:
     print("ДА")
 else:
     print("НЕТ")
