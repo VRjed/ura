@@ -1,7 +1,10 @@
-b = int(input())
-a = [0,1,2,3,4,5,6,7,8,9]
-if b in a:
-    c = False
-else:
-    c = True
-print (c)
+def makeLevel(n):
+  for i in range(1, n + 1):
+    print('*'*i)
+def tree(n):
+  s=2
+  while s!=(n+2):
+    makeLevel(s)
+    s+=1
+n = int(input())
+tree(n)
