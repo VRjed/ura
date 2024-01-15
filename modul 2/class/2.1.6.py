@@ -2,5 +2,5 @@ s = input()
 c = bool(s)
 if c == False:
     print("пустая строка")
-else:
+if c == True:
     print(s)

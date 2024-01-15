@@ -1,3 +1,1 @@
-v = input()
-c = bool(v)
-print(  c)
+print(bool(input()))

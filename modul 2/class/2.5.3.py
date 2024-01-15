@@ -1,4 +1,7 @@
 s = "ABCDEFGHIJKLMNOP"
-for i in range(16,0,2):
-    if i == 5 or i == 8  
-print(s)
+st = ''
+for i in s:
+    for j in range(15,5,-3):
+        st += str(i)
+print(st)
+#Не решено
