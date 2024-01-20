@@ -1,5 +1,4 @@
-n = int(input())
-j = 0
-for i in n and j in range(6,0,-1):
-    print(i)
-#Не решено
+a = input()
+b = len(a)
+for i in range(b):
+    print(a[5 - i])
