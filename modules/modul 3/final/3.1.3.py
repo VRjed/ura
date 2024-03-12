@@ -1,4 +1,4 @@
-a = input().lower
+a = input()
 alphabet = {
     "a": "Alpha", "b": "Bravo", "c": "Charlie", "d": "Delta", "e": "Echo",
     "f": "Foxtrot", "g": "Golf", "h": "Hotel", "i": "India", "j": "Juliett",
@@ -12,10 +12,15 @@ for i in range(26):
     b += chr(ord('a') + i)
 print(b)
 for i in a:
-    if i in b:
+    j = i
+    c = '"' + i + '"'
+    if j in b:
 
-        d = alphabet[""]
-        d = d + ' '
+        d = alphabet.get(c,'')
+        print(c)
+        g = d + ' '
+        print(g)
     else:
         continue
-print(b)
+print(d)
+#Py6!54th!o6657n
