@@ -1,4 +1,13 @@
+h = 'ABCDEFGHIJKLMNOPQRSTUVWXYZ'
+n = 'abcdefghijklmnopqrstuvwxyz'
 a = input()
+b = ''
+for i in a:
+    if i in h or i in n:
+        b += i
+    else:
+        continue
+a = b.lower()
 alphabet = {
     "a": "Alpha", "b": "Bravo", "c": "Charlie", "d": "Delta", "e": "Echo",
     "f": "Foxtrot", "g": "Golf", "h": "Hotel", "i": "India", "j": "Juliett",
@@ -7,20 +16,8 @@ alphabet = {
     "u": "Uniform", "v": "Victor", "w": "Whiskey", "x": "Xray", "y": "Yankee",
     "z": "Zulu"
 }
-b = ''
-for i in range(26):
-    b += chr(ord('a') + i)
-print(b)
+g = ''
 for i in a:
-    j = i
-    c = '"' + i + '"'
-    if j in b:
-
-        d = alphabet.get(c,'')
-        print(c)
-        g = d + ' '
-        print(g)
-    else:
-        continue
-print(d)
-#Py6!54th!o6657n
+    d = alphabet.get(i,'')
+    g += d + ' '
+print(g)
