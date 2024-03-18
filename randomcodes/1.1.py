@@ -1,3 +1,4 @@
-def sum(x):
-    return x + x
-print(sum(51414))
+def hello(x):
+	    return "Hello, {}!".format(x)
+
+
