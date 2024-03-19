@@ -1,14 +1,20 @@
-a = 
+a = '123456789+'
+b = 'True'
 def telephone(number):
-    if number in a:
+    for i in number:
+        if i in a:
+            continue
+        else:
+            b = "False"
+    if b == 'True':
         if len(number) == 12:
             if number[0] == '+' and number[1] == '7':
-                print('True')
+                b = 'True'
             else:
-                print("False")
+                b = "False"
         else:
-            print("False")
+            b = "False"
+        print(b)     
     else:
-        print("False")
-telephone('+74954567898')
-print(a)
+        print(b)
+telephone('+7914034630a')
