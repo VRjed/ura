@@ -1,4 +1,2 @@
-def hello(x):
-	    return "Hello, {}!".format(x)
-
-
+print(bin(1039)[2:])
+print(int("111"),2)
