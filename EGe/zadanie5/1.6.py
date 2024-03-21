@@ -1,33 +1,21 @@
-def R(n): # описываем наш алгоритм
-    s = bin(n)[2:] # строим двоичную запись
-    string = ''
+for N in range(1, 1000):
+    n = N
+    result = ""
     while n > 0:
-        string+=str(n%3)
-        n //= 3 
-    s = string[::-1]
-    if n % 3 == 0:
-        s = s + s[-3] + s[-2] + s[-1]
+        result += str(n % 3)
+        n //= 3
+    n3 = result[::-1]
+    if N % 3 == 0:
+        n3 += n3[-3:]
     else:
-        g = ''
-        while n % 3 * 3 > 0:
-            g +=str(n%3)
-            n //= 3 
-            s = s + g[::-1]
-    
-    
-    
-    
-    
-    
-
-
-
-
-
-
-    return int(s, 3) # переводим полученное число в десятичную систему счисления
-for n in range(1, 100000): # перебираем все возможные значения N
-    if R(n) > 340: # если полученное значение R превышает 1038
-        print(n) # выводим первое найденное значение 
-        break # выходим из цикла
-print('|//end//|')
+        m = N % 3 * 3 
+        result = ""
+        while m > 0:
+            result += str(m % 3)
+            m //= 3
+        m3 = result[::-1]
+        n3 += m3
+    R = int(n3, 3)
+    if R > 340:
+        print(N)
+        break
