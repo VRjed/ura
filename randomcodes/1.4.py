@@ -1,8 +1,12 @@
-def f(x, y, n):
-    if x > y:
-        return 0
-    if x == y and n <= 3:
-        return 1
+def f(n):
+    c = bin(n)[2:]
+    a = c.count("1")
+    if a % 2 == 0:
+        c ="10" + c[2:] + '1'
     else:
-        return f(x + 2, y, n )  + f(x * 3, y, n+1) + f(x * 5, y, n + 1)
-print(f(2, 200, 0))
+        c = "1" + c[2:] + '11'  
+    return int(c,2)
+for n in range(1, 100000):
+    if f(n) > 100:
+        print(n)
+        break
