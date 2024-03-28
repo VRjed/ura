@@ -1,12 +1,14 @@
-def f(n):
-    c = bin(n)[2:]
-    a = c.count("1")
-    if a % 2 == 0:
-        c ="10" + c[2:] + '1'
-    else:
-        c = "1" + c[2:] + '11'  
-    return int(c,2)
-for n in range(1, 100000):
-    if f(n) > 100:
-        print(n)
-        break
+alf = 'АВЕЛРФЬ'
+count = 1
+for i1 in alf:
+    for i2 in alf:
+        for i3 in alf:
+            for i4 in alf:
+                for i5 in alf:
+                    for i6 in alf:
+                        c = i1 + i2 + i3 + i4 + i5 + i6
+                        count += 1
+                        if (c.count('Е') == 0) and (c.count('А') == 0):
+                            print(count ,' 12421')
+                            exit(1)
+                            
