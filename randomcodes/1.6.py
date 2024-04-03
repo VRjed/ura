@@ -13,15 +13,17 @@ for i in a.readlines():
     c = 0
     count2 = 0
     for k in d:
-        if d[k] == 3:
-            count += 1
-            c = k * 3
-        elif d[k] == 1:
-            g += k
-            count2 += 1
-    if count == 1 and count2 == 3:
-        if g / 3 <= c:
+        c += k
+        #if d[k] == 3:
+         #   count += 1
+         #   c = k * 3
+        #elif d[k] == 1:
+        #    g += k
+         #   count2 += 1
+    if len(d) == 3:
+        if c % 3 == 0:
             i12312123 += 1
+            print(d)
 print(i12312123)
 
     
